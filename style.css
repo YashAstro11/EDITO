@@ -103,3 +103,20 @@ video {
   background: #f0f0f0;
   border: none;
 }
+
+/* styling site icon */
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+/* styling save btn  */
+.save-btn {
+  cursor: pointer;
+  background: #f0f0f0;
+  border: none;
+}
+.save-logo {
+  height: 20px;
+  width: 20px;
+}
