@@ -7,15 +7,30 @@ function changeColor() {
 }
 function bgbox1(){
     var box1 = document.getElementById('box1');
-    box1.style.backgroundColor = "rgb(255, 0, 0)";
+    // box1.style.backgroundColor = "rgb(255, 0, 0)";
+    if(box1.style.backgroundColor == 'rgb(255, 0, 0)'){
+        box1.style.backgroundColor = '#000';
+    } else{
+        box1.style.backgroundColor = 'rgb(255, 0, 0)';
+    }
 }
 function bgbox2(){
     var box2 = document.getElementById('box2');
-    box2.style.backgroundColor = "rgb(255, 0, 0)";
+    // box2.style.backgroundColor = "rgb(255, 0, 0)";
+    if(box2.style.backgroundColor == 'rgb(255, 0, 0)'){
+        box2.style.backgroundColor = '#000';
+    } else{
+        box2.style.backgroundColor = 'rgb(255, 0, 0)';
+    }
 }
 function bgbox3(){
     var box3 = document.getElementById('box3');
-    box3.style.backgroundColor = "rgb(255, 0, 0)";
+    // box3.style.backgroundColor = "rgb(255, 0, 0)";
+    if(box3.style.backgroundColor == 'rgb(255, 0, 0)'){
+        box3.style.backgroundColor = '#000';
+    } else{
+        box3.style.backgroundColor = 'rgb(255, 0, 0)';
+    }
 }
 function saveVideo2(){
     var video = document.getElementById('myVideo2');
