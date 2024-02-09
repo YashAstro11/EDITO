@@ -98,7 +98,7 @@ video {
   height: 20px;
   width: 20px;
 }
-#like-btn {
+.like-btn {
   cursor: pointer;
   background: #f0f0f0;
   border: none;
