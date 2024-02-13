@@ -53,6 +53,15 @@ h1 {
   margin: 0;
   text-transform: uppercase;
 }
+h2 {
+  color: #fff;
+  font-size: 30px;
+  margin: 0px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 17rem;
+  font-family: cursive;
+}
 p {
   line-height: 1.6;
 }
@@ -89,6 +98,7 @@ video {
   background-color: #000;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
   transition: box-shadow 0.3s ease;
 }
 .box:hover {
@@ -124,13 +134,63 @@ video {
   width: 20px;
 }
 
+/* second container css */
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+/* adding css to the new boxes */
+.nbox {
+  width: 100%;
+  height: auto;
+  background: #000;
+  /* display: flex; */
+  border-radius: 20px;
+  margin-bottom: 20px;
+  /* justify-content: center; */
+  /* margin-top: 10px; */
+  /* border: 1px solid black; */
+}
+
+/* likedlist styling */
+#likedList {
+  list-style-type: none;
+  padding: 0;
+}
+#likedList li {
+  /* margin-bottom: 10px; */
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+#likedList li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+#likedList li a:hover {
+  color: #008cff;
+}
+
 /* Adding responsiveness  */
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     justify-content: center;
   }
+  .container2 {
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    justify-content: center;
+  }
   .next-intro {
     display: none;
+  }
+  h2 {
+    margin-left: 8rem;
   }
 }
