@@ -63,41 +63,32 @@ function saveVideo3(){
 
 // adding the event when clicked on the like button 
 
-// Get references to the like button and liked list
 const likeButton = document.getElementById("likeButton");
 const likedList = document.getElementById("likedList");
 
-// Initialize an empty array to store liked videos
 let likedVideos = [];
 
-// Function to handle click event on like button
 function handleLikeButtonClick() {
-  // Get reference to your video
+
   const video = {
     title: "Chal Ghar chale",
     url: "Fvideo/chal.mp4",
   };
 
-  // Check if the video is already in the liked list
   if (
     !likedVideos.some(
       (v) => v.title === video.title && v.url === video.url
     )
   ) {
-    // Add the video to the array of liked videos
     likedVideos.push(video);
-    // Call a function to update the UI
     updateLikedListUI();
   } else {
     alert("You've already liked this video!");
   }
 }
 
-// Function to update the UI with the list of liked videos
 function updateLikedListUI() {
-  // Clear the existing list
   likedList.innerHTML = "";
-  // Iterate over the liked videos array and create list items
   likedVideos.forEach((video) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
