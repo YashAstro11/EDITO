@@ -46,6 +46,7 @@ nav a {
   margin: 0 10px; /* Add space between links */
   margin-bottom: 10px;
 }
+/* styling heading tags */
 h1 {
   /* color: rgba(216, 42, 42, 0.582); */
   color: #000;
@@ -61,6 +62,13 @@ h2 {
   margin-top: 20px;
   margin-left: 17rem;
   font-family: cursive;
+}
+h4 {
+  color: #fff;
+  margin-left: 1rem;
+  font-family: math;
+  /* text-transform: uppercase; */
+  /* font-family: cursive; */
 }
 p {
   line-height: 1.6;
@@ -97,7 +105,7 @@ video {
 .box {
   background-color: #000;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 20px;
   transition: box-shadow 0.3s ease;
 }
@@ -114,6 +122,7 @@ video {
   cursor: pointer;
   background: #f0f0f0;
   border: none;
+  margin-top: 15px;
 }
 
 /* styling site icon */
@@ -193,6 +202,20 @@ video {
   z-index: -1; /* Ensure the background is behind other content */
 }
 
+/* style the profile image  */
+.profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* styling profile section  */
+.my-profile {
+  display: flex;
+  /* border: 1px solid white; */
+  align-items: end;
+}
 /* Adding responsiveness  */
 @media screen and (max-width: 768px) {
   .container {
@@ -208,5 +231,8 @@ video {
   }
   h2 {
     margin-left: 8rem;
+  }
+  header {
+    padding: 10px;
   }
 }
