@@ -3,6 +3,11 @@ function changeColor() {
     var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = randomColor;
 }
+function changeh1color(){
+    const h1 = document.getElementById('hchar');
+    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    h1.style.backgroundColor = randomColor;
+}
 function bgbox1(){
     var box1 = document.getElementById('box1');
     // box1.style.backgroundColor = "rgb(255, 0, 0)";

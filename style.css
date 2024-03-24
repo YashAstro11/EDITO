@@ -5,6 +5,11 @@ body {
   background-color: #f8f9fa;
   color: #333;
 }
+#hchar {
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  margin-left: 10px;
+}
 header {
   /* background-color: #000; */
   color: #fff;
@@ -25,8 +30,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 .intro {
   display: flex;
@@ -53,6 +58,7 @@ h1 {
   font-size: 36px;
   margin: 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 h2 {
   color: #fff;
@@ -127,8 +133,8 @@ video {
 
 /* styling site icon */
 .logo {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
@@ -232,7 +238,18 @@ video {
   h2 {
     margin-left: 8rem;
   }
+  h1 {
+    font-size: 30px;
+  }
+  .logo {
+    height: 35px;
+    width: 35px;
+  }
   header {
     padding: 10px;
+  }
+  .blackbg {
+    height: 30px;
+    width: 30px;
   }
 }
