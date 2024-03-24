@@ -3,7 +3,7 @@ function changeColor() {
     var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = randomColor;
 }
-function changeh1color(){
+function changeh1bgcolor(){
     const h1 = document.getElementById('hchar');
     var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
     h1.style.backgroundColor = randomColor;
