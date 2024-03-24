@@ -60,14 +60,21 @@ h1 {
   text-transform: uppercase;
   cursor: pointer;
 }
-h2 {
+/* h2 {
   color: #fff;
-  font-size: 30px;
-  margin: 0px;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-left: 17rem;
   font-family: cursive;
+  margin-left: 16rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+} */
+.smheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: cursive;
+  text-transform: uppercase;
 }
 h4 {
   color: #fff;
@@ -222,6 +229,41 @@ video {
   /* border: 1px solid white; */
   align-items: end;
 }
+
+/* table styling */
+.suggesttable {
+  /* border: 1px solid #fff; */
+  color: #fff;
+  font-size: 1em;
+  margin: 20px;
+}
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+.table tbody tr td {
+  columns: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+.table tbody tr td:first-child {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #222;
+}
+/* styling links under table  */
+.editlink {
+  color: #fff;
+  text-decoration: none;
+}
 /* Adding responsiveness  */
 @media screen and (max-width: 768px) {
   .container {
@@ -234,9 +276,6 @@ video {
   }
   .next-intro {
     display: none;
-  }
-  h2 {
-    margin-left: 8rem;
   }
   h1 {
     font-size: 30px;
@@ -251,5 +290,8 @@ video {
   .blackbg {
     height: 30px;
     width: 30px;
+  }
+  .smheading {
+    font-size: 1rem;
   }
 }
